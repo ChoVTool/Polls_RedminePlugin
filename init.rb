@@ -15,7 +15,7 @@ Redmine::Plugin.register :polls do
   #delete menu
   delete_menu_item :top_menu, :my_page
   delete_menu_item :top_menu, :help
-  delete_menu_item :project_menu, :overview
+  delete_menu_item :project_menu, :overview
   delete_menu_item :project_menu, :activity
   delete_menu_item :project_menu, :news
   
@@ -25,6 +25,6 @@ Redmine::Plugin.register :polls do
     permission :vote_polls, :polls => :vote
   end
   
-  ## enabled by adding the "settings" 
+  ## enabled by adding the "settings"
    settings :default => {'empty' => true}, :partial => 'settings/polls_settings'
 end
